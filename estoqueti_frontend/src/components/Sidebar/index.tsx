@@ -22,12 +22,9 @@ import LogoutRoundedIcon from '@mui/icons-material/LogoutRounded';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import Logo from './Logo';
 import { useNavigate } from 'react-router-dom';
-
 import ColorSchemeToggle from '../ColorSchemeToggle/ColorSchemeToggle.tsx';
 import { closeSidebar } from '../utils';
-
 import config from "../../config";
-import axios from 'axios';
 import CryptoJS from 'crypto-js';
 
 function Toggler({
@@ -83,9 +80,11 @@ export default function Sidebar() {
       route: '/home/estoque',
       subItems: [
         { label: 'Todos componentes', route: '/home/estoque/todos-componentes' },
+        { label: 'Adaptadores', route: '/home/estoque/adaptadores' },
+        { label: 'Armazenamento', route: '/home/estoque/armazenamento' },
         { label: 'Cabos', route: '/home/estoque/cabos' },
-        { label: 'Monitores', route: '/home/estoque/monitores' },
-        { label: 'Mouses', route: '/home/estoque/mouses' },
+        { label: 'Desktops', route: '/home/estoque/desktops' },
+        // { label: 'Monitores', route: '/home/estoque/monitores' },
       ],
     },
   ];
